@@ -10,6 +10,12 @@ body {
   font-family: 'Poppins';
 }
 
+section {
+  padding: 5rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 a {
   color: #444;
 }
@@ -41,14 +47,8 @@ a {
   place-content: space-between;
 }
 
-.navbar .mobile-menu {
+.navbar .mobile-menu-open {
   cursor: pointer;
-}
-
-section {
-  padding: 5rem 2rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .hero {
@@ -91,5 +91,38 @@ section {
 .hero .hero-img {
   width: 70%;
   margin-top: 3em;
+}
+
+section.features-section {
+  background: #20272E;
+  color: #FFF;
+}
+
+section.features-section ul.features-list {
+  list-style: none;
+  margin: 0;
+  padding-left: .1em;
+}
+
+section.features-section ul.features-list li {
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+section.features-section ul.features-list li:before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url("../images/bullet.svg");
+  background-size: contain;
+}
+
+section.features-section img {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
