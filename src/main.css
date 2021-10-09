@@ -8,6 +8,7 @@ body {
   background: #F2F2F2;
   margin: 0;
   font-family: 'Poppins';
+  overflow-x: hidden;
 }
 
 section {
@@ -20,34 +21,31 @@ a {
   color: #444;
 }
 
-.navbar {
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
   background: #FFF;
   padding: 1em;
 }
 
-.navbar .logo {
+.navbar .container .logo {
   color: black;
   font-weight: 700;
   font-size: 1.2rem;
   text-decoration: none;
 }
 
-.navbar .logo span {
+.navbar .container .logo span {
   color: var(--primary-color);
 }
 
-.navbar nav {
+.navbar .container nav {
   display: none;
 }
 
-.navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: space-between;
-}
-
-.navbar .mobile-menu-open {
+.navbar .container .mobile-menu-open {
   cursor: pointer;
 }
 
@@ -124,5 +122,59 @@ section.features-section ul.features-list li:before {
 
 section.features-section img {
   display: none;
+}
+
+.testimonials-section {
+  background: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFF;
+}
+
+.testimonials-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials-section .container ul {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  padding: 0;
+  margin: 0;
+}
+
+.testimonials-section .container ul li {
+  background: #006BD6;
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em;
+  position: relative;
+  border-radius: 1em;
+}
+
+.testimonials-section .container ul li img {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 5px solid #006BD6;
+  margin-top: -4.5em;
 }
 /*# sourceMappingURL=main.css.map */
