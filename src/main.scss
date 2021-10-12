@@ -14,7 +14,7 @@ body {
 
 section {
     padding: 5rem 2rem;
-    box-sizing: border-box;
+    // box-sizing: border-box;
 }
 
 a {
@@ -27,6 +27,7 @@ a {
         place-content: space-between;
         background: #FFF;
         padding: 1em;
+        box-sizing: border-box;
 
         .logo {
             color: black;
@@ -144,6 +145,7 @@ section.features-section {
             display: grid;
             padding: 0;
             margin: 0;
+
             li {
                 background: #006BD6;
                 text-align: center;
@@ -162,6 +164,49 @@ section.features-section {
                     margin-top: -4.5em;
                 }
             }
+        }
+    }
+}
+
+.contact-section {
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-size: 2em;
+        }
+        label {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: .5em;
+        }
+        input, textarea {
+            width: 100%;
+            padding: .8em;
+            margin-bottom: 1em;
+            border-radius: .3em;
+            border: 1px solid gray;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background: var(--primary-color);
+            color: #FFF;
+            font-weight: 700;
+            font-size: 1.3em;
+            border: none; //Removes the default button border
+            border-radius: 5em;
+            padding: .8em 2em;
+            width: unset; //Unsets the width declaration above
+            margin-bottom: 5em;
+            display: inline-block; // Smaller size?
+            cursor: pointer;
+        }
+    }
+    .contact-right {
+        iframe {
+            width: 100%;
+            height: 300px;
         }
     }
 }
